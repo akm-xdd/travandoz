@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "authentication.apps.AuthenticationConfig",
     "root.apps.RootConfig",
+    "authentication.apps.AuthenticationConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -115,7 +115,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_URL = "static/"
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'travandoz/static')
+    os.path.join(BASE_DIR,'root/static')
 ]
 
 # Default primary key field type
